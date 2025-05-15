@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Bruno Rafael - Desenvolvedor FullStack</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+    body, h1, h2, p, ul, li, form, pre, code {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #0a58ca;
+    }
+    section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #dee2e6;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+      color: #343a40;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 16px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+ 
+    .skill {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+    .skill span {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #e0e0e0;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress {
+      height: 100%;
+      background-color: #3498db;
+      border-radius: 10px;
+    }
+    /* Depoimentos */
+    .testimonial {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .testimonial img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+   
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    form input[type="submit"] {
+      background-color: #0d6efd;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form input[type="submit"]:hover {
+      background-color: #0a58ca;
+    }
+
+    pre {
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    code {
+      font-family: monospace;
+      font-size: 15px;
+      color: #d63384;
+    }
+  
+    .whatsapp-link {
+      font-size: 18px;
+      color: #25D366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .whatsapp-link i {
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #dee2e6;
+    }
+    footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #0a58ca;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#introducao">Início</a></li>
+        <li><a href="#historico">Histórico</a></li>
+        <li><a href="#interesses">Interesses</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#aprendizado">Aprendizado</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="introducao">
+    <h1>Bem-vindo ao meu Portfólio</h1>
+    <p>Olá, eu sou <strong>Bruno Rafael</strong>, tenho 16 anos, moro em Caucaia e estudo Ensino Médio integrado ao curso técnico em Desenvolvimento de Sistemas.</p>
+    <hr>
+  </section>
+
+  <section id="historico">
+    <h1>Histórico Acadêmico</h1>
+    <ul>
+      <li>
+        Curso Técnico em Desenvolvimento de Sistemas na EEEP Marly Ferreira Martis<br>
+        <em>2024 - Atual</em>
+      </li>
+      <li>
+        Curso de Desenvolvimento Full Stack na Capacita Brasil/Atlântico Avanti<br>
+        <em>2025 - Atual</em>
+      </li>
+    </ul>
+    <hr>
+  </section>
+
+  <section id="interesses">
+    <h1>Interesses e Especialidades</h1>
+    <h2>Profissionais</h2>
+    <ul>
+      <li>Trabalhar na área de T.I com foco em desenvolvimento de sistemas.</li>
+      <li>Aprender novas tecnologias e linguagens de programação.</li>
+    </ul>
+    <h2>Pessoais</h2>
+    <ul>
+      <li>Completar o ensino médio, o curso técnico e ingressar na faculdade para conquistar a minha independência financeira para futuramente construir minha familia.</li>
+    </ul>
+    <hr>
+  </section>
+
+  <section id="habilidades">
+    <h1>Habilidades Técnicas</h1>
+    <div class="skill">
+      <span>HTML5</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <span>CSS3</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <span>Node.js</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;"></div>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section id="depoimentos">
+    <h1>Depoimentos</h1>
+    <div class="testimonial">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEA8QEA8VDxUQFRUQDw8PEBUQFREWGBgXFRcYHSggGRslHRYWITEhJikrLi4uFx8zODMsNygtLisBCgoKDg0OGBAQFysfHR0rLS0tKystLSstLS0tKysrLS0tLSstLSsuLS0tKy0tLS03LS0rNysrLTcrLTctKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIGBAUHAwj/xABAEAACAQIDBQUFBgMHBQEAAAABAgADEQQSIQUGMUFREyJhcYEHMpGhwRQjQmKx0VJy4RUzQ4KSsvAkJWOiwhb/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACIRAQEAAgICAgIDAAAAAAAAAAABAhEDITFBEjIiUQQTYf/aAAwDAQACEQMRAD8A7PCOEsqUI4rQCELQtAIRwgKEcVoBaFoRM4GpgEJrNobwYagctSqobja5JmvxG+OEVbioGvwABLE+UrbItMbfSxwE56+/1btwRQfsOBUhC58VObSWLZe9+FrEKWalUP4aqlfnexkTPGrf15LDC0SMCLjh8ZKWUAhHCAoRwkhRSVooQUCI4oEbQMkYjAiREZORMCMiRJERQIRGSiMCMIQgZsIWhAIQtC0AhC0IBCEIChHFAiZX96d5aOCTvkNVPupwJ8T0mz2vtFMPSeq/BRe3MnkJwDePaHb13rV6gzs2i3uqLyUeUpllpphht6b1bztWqEmwIvbLx+Mpv22qxvma+vMzfph6da2t35WE2WH3Nc96xF/hMrlPbpmF9KnhNsYmkcwe/ge9LlsLfOlWtSxVABjoKlM/qJ6VvZ+xW68ZUNtbEr4YksrADmOPxkfjktrLH/XU8BtuthqihK5KHhe7LblnB5eI4TpewtrLiUzWyuNGXkD1B5gzgmydrdphKb1RmyVBTzDRluLqf/U+ctdDar0Gp4mg9jYZl/Cw5gjp+8rjncb2nk45nNx2OE1ew9s08SisO62UMVJvoeYPMcptZ0y78OGzV0UcLR2lkIwjhCCitHaEBGIxwgRMRkojAiZAyZkTAiZEyRiMCMUlCBmQhCAQjhAUI4oBFHCApCq1heTmu23ihTpM17aEfoP1Mi3SZN1zD2o7w2Jpg3sbAA8X/YTltHDmtVVeJJ1m53yxBfFcb2u3qbW/UQ3PpZ6rvyzZV8hMbfbrwnpft19hUqSg5AWsNTqZdMPhltwlf2ahUCWPDtoP3mc7b5dMqnhVtqBNdt3d+nWpMpUG46azZJVmQauliJZTdcDp7FKrjMOe6Vrpb0BZfqJmbEzGiVYXKt2bg8r6q3lylo3ioKles1gM4RvVb/vK7i6v2arTrqLowyVF4gr/AMvMr+m2tMrYm26mFq9mSQoPaU21t+Zb9CNLTtuGrCoiuPxKH/1C/wBZxHF4SobVsLVJQ6mn3bjTUC/MTq+7WVqGGb/E7BCxub3ygWIva824snJ/IxnlvI4hHOhyiKOEIKIxwgKKOEBSJkjIwEZEyZkTAiZEyRkWgRhCEDNhCEAhCEAhCEAijigJpT97sQhY9s1sPSp9q4BszvqKdMddb+tuktzmcg9pWLd6tWkhsqAO55ZrHKv+4+UpnemnHO3Ltt4wnEM5Nyz8uAAPAeHAek3e7GcUkakoLlri5yrx/EZS61Uu5vyNp0vdfZLPQp5GAYKvHgdLzPPqOri7qyUcXj6YuVw1UW90MyHhyJGs2WxN6jVqdlVw1Si/I3DIfUcJUMTuhi6rM32sLVD+7mYL2dtBabJNkV8M6MKgqIFuxzXObLrp0vwlfTXzXR+10J5CaervagOSnh69duHdUIvxYibnApmoKeZF+F+Uom8eG2k1QjClEs4HeI7y9QeXlEV1HjvXia72qHDZE5kVEcjwIBmlpBayGmfMD6X+fym3fCbRVSuKVagKA5k/iPFSPhrNBigaRDW4Hhz9PGZZdVvO8Sw+Iq4cFSMwHAkaMOjfwN0M6RuXgHZVxPasiutggJIsORvzveUxD2qaDOOo1IHSWHcfbAoWw7v90WOXNc5G8PA/r5y3HZL2w58bZ06ZSWwte8nMFdo0wO8w6XGq/GZ063BYIQhJQIo4jCBFHCBEyMlERARkZIxEQIGRaSkWgKEIQMyEUcAhCEAhCEAiMDCEvOqdDOW7fwJf+0V/xO3NTXmjU1C+l1PwE6o/Cc935+5rrVUXDp2dQfkJv8QQD6HrM85004vL50pUwagUnKC+UnprOz7k1cuVfAeXCcm3iwZpV6i/mvp4nrL5uNjWelTcm7AlSbdDpM8+5t18H2sdiporAEqp8wDNBvJilBFK9idbDnrPL+37DKB3vHS0rm09rsK4fKG4an6TO5dNphqunbMX7lL6d0Xns1ClU4qjEaXIBI/aaPZ+8AqU1FOkztpp7o9TFtNqlFu2QHKdXUai/hLbjOYdt5icIuQiwsegE437TlFFDbiW05cDOoYXbaVUFmv+85D7YMZerTp2NzTZhbre0jW6t3jhdtTuzvEVYBmseFzbX+bxljx2NIYVFF9QTlNifG41nN9kt3gGFwfQy/7FwnalUDDy1zD4+kjOSXpXjtuPa/biYyrjMPVotoufKMygEIRybmZ0amLADoAPgJXt09lU6FJXA77otyeY6W4ASxidGE6cXJd5dCEITRmIjHEYQIo4oCMUZigIxGMxGBCRaSkTAUIQgZcIo4BCEIBCEIBEY7xGEoM9rkmw+k597QMWpUXAtduf4FXT4k38hLi9I1iczEUw5UKDYnKbXY9L30nMfbFiRTXD0E7pZKtQkccgy3H6n/LKZ+GnH9nKtuYk1iznRc2nVuQvN37PMYFzUz7wYOPEHjNHtKiQFJAClcw1vpewvMSniHw7pUQ99QMw5WIvY+Ey1uadO/jl8nZt4MOKtMZWNPMLq6aFWOuvUSubJSrm7OvVUOtzmqr921rWsw4HwMydk7Y7Wkt9AQCVPEN1HhN9hdjsxFRb6rxHSZT9OvHW91vtlq6KB9owwIIByWqEjwA1jxWCxNd0tiStAa1Pu1DMbDQXHdF7w2dgKi2FyPIBTN6lPInT9ZopyZTfnbSU8ElLMFXi2bw5eE5F7Q8WlTHsoszIgpAHgHOp9dRLtv7vrTwY7Kn38Sw7oHurfmx9eE5Bs0GrivvCSzMWJPHNe97yMZrtlnnvp74RFplcy3sNeV9ZY8LtilSrUq1DNYC1RH4jXip5iaXa2GdalQMOC2JHPXT1tymduvspq3asFuoBC+Le6AOt+gizZL8enbt2Nvo1FAxVQqcS2hHiJYdn7ZoViVpuCRobHMt/MaSrbE2K9ClkQ5iqi4YC1suov1BvN/srZwQHKFVXIY5RYX8prhvXbkz+O+m8ivCE1ZC8UcUIF4QiMAMUcjADEY5EwImRkjImAoRQgZcIoXgOEV4XgOEUIDiJhEYGNWpZSWTgTcjle3EfCcu9rGBTEjD1qTpnpMyFSRfK/EHwuPnOk7cp1Hw1ZKTBahpsFbo1pyOpUw1Z3wwbD4RqVAPWfFvVLs5BulJA4BtbU+I6zPJtx6VRjlwj0gismcN3gl1ccCDa46W4aSG8eBwowOCJb/uDXLqBYimzZhn8bH5ye1NplkW1CnQC0gDlzJ2357Prfy0msai9eoXa5fmTfyA+FvlM5dN7j8m62GbKPh8peN39tdl3HF04+IPhKfsrCkACWjB7PJF5jb26sda7XCjtpDaxPwjxeMeqLDur8zNRgsKVtpN0Esst3VcpjHCPaWMuL0/h9eP9JqNl9+qHNwyjNZba5ReWT2o4BhiVqAaFbeoP9ZVtn1UQ2qKSv5TZvSaT6sMp+e3QK+Lw9SiHygmpSJYga8LaeMtG4+yzhEp12ArYYg5WBN6Qv+JRx6ZuNhKTstMOyoynNQJyPrZ0zcGseFuvxl32O4wqWSvTzKWyioD2JQ8M3QngZTG9r547jpFC9RQVKBCNCt2JXwmdSphRbppKh7NdoHEUsQ5pinTGJZUCsWQCykhTzXMSRLjOmdxw5TVOEISVRCELyUCKBhAJEx3kSYBIxkyMBRGMyJgKEIQMmEV4XgOEV4XgOF4rwvCTvNFtrerC4V+zqVCauXMURGdgD1tw8poN8N+OyqNhcKV7cAgs18oYj3QeF5zM1qdU1Gem1HGp32DM3fAOpufeHjItXxw35dQxftEwYUle0c2vZaTXv0NyLTme2tvnFPVYLTwiVCuclVqEhSbeObXlx06T0rYUMoYcxfQ+GnnNDjtlM+oPeUgkcrdRKZN5hIsCYRKzCoc1Z20WpWbRQP4E6+c2OF2SuoUc7E2mVutso9mjgAXW30looYQLpac926prTQYfY2oNpZMBgO7wmVh8NrNnSULEiuWTUGiRymcKXdHlPaqgMYNxaWVt2pu9mwlxCMpHkeYM5bid16yuVAuo1zcABzvO84uhcaytY/BqFqLUsUNzx0t0MpbZWmMmXlyTAsUc2s1MKbggi4sbkTaYF/tTimgcBiRb3gAOFjzF9ATNlSw6s1ZKWFVmOik1FtbqOXpMTZ2Br0w5YFDqNbIg8T4Dw6mTtWzTpO4tdcFTFAtojAOLji7a26sCRpzW/SXw1sqlqndFrm/L+s4D/a2Ir1qS0zUqU6Ru9TKMrVMupHUDgPjOmbsbVbGFUxb2KkMiABFqEagueZ/LNcLfDn5cJb8ouGAZ2Bd9MxuB0UcJkxRzaOUQihJQIQigBkTJSJgIxGBMRgIxGMyJgKEIQMiORhAcIoGAzNJvhtr7Fg6tf8dsiDrUbQfU+k3M5l7Y8ddsHhr2Hfrtrz0Rf/uRVsZuqLUxoyjEUyXTN94rDMysTqT68494itSmlamRnAJRh1tqh8COUxKyHDsK6jMnCqo/FT5nzH0mRWwKqCtNs1CoMwsfdJ4Msq6NMvdLGCvhh1Q5DfU+HymZiMPY/oZXdxnKVMRTOnfv62teXCooIMVfHw3W5Fa6vRPFTmH8vP6S0dlOc7LxRoVlqDgDYjw6TpVCorqrqbqwuD4TLKLypILT0XWRCz0VZCTMFELRyDbwxJ0lY3i2e1Sm6qxCnQ2FyRLY9O88TR43Gkiza+OWnBcfgKlCoLqaVzcc+6NJvsBjqLKKWKdmQjQqTofG4m13gppicQxAunur/Ip4+swaez0FVRluOPUWlph0rcu3qHU9nRpe6TmNrDug6D1mZQcXd+QNl8gNZr6rAVqhGllIFtOU9sGbhE5KAW8+Q+s1nSjqG6m1jXplHN6qAC/NkPAnxm9nNt1MdlxSEe4x7M+IP9Z0eXjk5MdZJQiiks0oorwvACZExxEwEYo7xQEZEmMyJgF4SMcD3vC8UcAvCEV4DJnEN/NpDEbUqqdFT/p180/ckztt/wBZwLezBq2NxnZtcrXYMB7wa+hH/OUrWnH5ToqLFWsBwN7215Ga7K2HcUdSoOel4p+JPMDUTOwOILjI4+9AsQeDr1HjJ4/CdpTABNwc1NjxWoOAPhy9ZDdW9hYrLiqx6sPUdZe6bXHpOas+Ws1QDKHAa38LA5WX0I+FpeNh4wVKY14QY1kVNHt1/Wb3dvbv2c9lV/uyf9J6jwmixgsynoZOogbz6iRYu6vQZWAZSGBFwRqCPCeqrOVYLauJw3905K31W2Zb+K8j5Tf4Lf8AHCrRBP5GsfgZS41O1zYx3lV//a0G4U6nkconlW30A/u6Q/zt+0jVFyAlb3n28qq1GkwLkWZlPAdB4yu47eWvW0zZV6J3fnxmrRrv5Ak+ctMR74TUsfC086R+9HTLaemBHdPiYqA75PSWGsxT5Wqtx7tgOpJAE9cLcDIDrxYjqeU8sXfvAcWcDyA1JmVh6eUAD/hgbHDPkKsOKkN8DedapOGUMOBAPxF5yFW0nT93q2bC4c/+IA+Y0+ktHPzRsrwvI3heWYHAmImImAGK8DFeA4jFFeAGRMciTAcJGED3heRvHeA4SN4QFUcKCx4AFj5AXnzfiqlSpiq2IptZ2qs1jqrAsdD6Tve9mL7HBYqp0osB5kWE4Psxbyta8bJwzFzZSaNYa5GGZP8AITym0w1YvmV1ytbvC+n8yyBw6uAD6Ee8p6gx1wQoqH30tmI0DUydTb5+kh0SKZt4dnWa4vd83qws3xKg+szd3cdkewNgeIMx95yPtCj1nrgXW4uokqe1zdgwEkvSa3DYgWEzVqyGke14nyniAfMXkGqWnmasJS7FP4F/SMBRyHwnn2si7yB7F560F4+Mxke0yKbQM2joJ49qqXZtAT9ZKk8jj6StTYEDh87GEbaypWVqpCkFQM5PLXgPhrMqg19bysbGxBZLfjerqeWRfe+iywU6t9Bof0H7ySVno1z4D5mdK3OqXwdLwaovwcn6zmtHQS+7hVr0Kic1rfJkU/QyYy5fCzwvFeImWcxkxRXheAzEYExQC8V4RXgBkSYExQC8Irwge14ZoQgF4XhCBTvapicmz2Uf4lVU9Abn9JyXZwt844Stbcbd0ToIY2oBSqE/wEfEQhDf0oG2qt8T5IBJYerYwhDNucPipscPi+XrCEJjJ+06TxOIhCQuicRAYmEIQ9KeImbSrwhCYyKde8MdiLUnN+CH9IQhN8KPsOtZA34mOUeXH/deWrBNYa6k6whJVxbOm2glu9ntf7yunI00f4G31hCIryeF2vETFCWcovCEIAYrwhAV4iYQgRvI3hCArwhCB//Z" alt="Foto de Cliente 1">
+      <p>"Bruno demonstrou um comprometimento excepcional e capacidade de inovação. Recomendo!"</p>
+      <p><strong>- Cliente 1</strong></p>
+    </div>
+    <div class="testimonial">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4ihyQKWtwioDt6IdjKOrNz53qbpVH4uoWw&s" alt="Foto de Cliente 2">
+      <p>"Seu trabalho é de alta qualidade e sempre superou minhas expectativas."</p>
+      <p><strong>- Cliente 2</strong></p>
+    </div>
+    <hr>
+  </section>
+
+  <section id="galeria">
+    <h1>Galeria de Projetos</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="../Progamação web/projeto.PNG" alt="Projeto 1" >
+      </div>
+      <div class="gallery-item">
+        <img src="../Progamação web/projeto2.PNG" alt="Projeto 2" >
+      </div>
+      <div class="gallery-item">
+        <img src="../Progamação web/projeto3.PNG" alt="Projeto 3" >
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section id="aprendizado">
+    <h1>Seção de Aprendizado</h1>
+    <p>Estou sempre estudando e me atualizando. Confira abaixo um exemplo de trecho de código que escrevi recentemente:</p>
+    <pre><code>
+// Exemplo de função JavaScript
+function saudacao(nome) {
+  return 'Olá, ' + nome + '! Bem-vindo(a) ao meu portfólio.';
+}
+console.log(saudacao('Visitante'));
+    </code></pre>
+   
+    <h2>Deixe seu comentário</h2>
+    <form class="comment-form">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <textarea name="comentario" rows="4" placeholder="Seu comentário" required></textarea>
+      <input type="submit" value="Enviar Comentário">
+    </form>
+    <hr>
+  </section>
+
+
+  <section id="contato">
+    <h1>Contato</h1>
+    <p>Entre em contato para conversarmos sobre projetos, dúvidas ou orçamentos!</p>
+    
+    <form class="contact-form">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <input type="text" name="assunto" placeholder="Assunto" required>
+      <input type="tel" name="telefone" placeholder="Telefone" required>
+      <textarea name="mensagem" rows="4" placeholder="Digite sua mensagem aqui" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+   
+
+    <p>Ou entre em contato pelo WhatsApp:</p>
+    <a href="https://wa.me/5585991376344?text=Olá%20Bruno,%20Estou%20interessado%20em%20seu%20trabalho." class="whatsapp-link">
+      <i class="fa fa-whatsapp"></i> Enviar mensagem
+    </a>
+    <hr>
+  </section>
+
+  <footer>
+    <p>
+      Veja a documentação completa do projeto no 
+      <a href="https://github.com/bruno1918" target="_blank">GitHub</a>.
+    </p>
+  </footer>
+  
+</body>
+</html>
